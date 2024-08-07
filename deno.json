@@ -1,0 +1,24 @@
+{
+  "lock": false,
+  "tasks": {
+    "dev": "deno run --allow-all --watch ./source/main.ts"
+  },
+  "imports": {
+    "$ApiflyDefinition": "./source/ApiflyDefinition.ts",
+    "$helpers/": "./source/helpers/",
+    "$shared": "./source/shared.ts",
+    "$types": "./source/types.ts",
+    "@std/assert": "jsr:@std/assert@1.0.0",
+    "@artpani/tuner": "jsr:@artpani/tuner@^0.3.0",
+    "@vseplet/apifly": "jsr:@vseplet/apifly@^0.0.10",
+    "@vseplet/fetchify": "jsr:@vseplet/fetchify@0.3.17",
+    "@vseplet/luminous": "jsr:@vseplet/luminous@1.0.5",
+    "@grammy": "https://deno.land/x/grammy@v1.28.0/mod.ts",
+    "@hono/hono": "jsr:@hono/hono@4.5.4"
+  },
+
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "@hono/hono/jsx"
+  }
+}
